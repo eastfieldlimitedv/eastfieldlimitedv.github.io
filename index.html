@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EASTFIELD LIMITED · Games</title>
+<meta name="description" content="CopperNimbus Games">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EASTFIELD LIMITED">
+<meta property="og:title" content="EASTFIELD LIMITED · Games">
+<meta property="og:description" content="CopperNimbus Games">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/archivo.css">
+<style>
+:root {
+  --bg: hsl(325 0% 4%);
+  --card: hsl(325 0% 10%);
+  --ink: hsl(325 0% 96%);
+  --muted: hsl(325 0% 62%);
+  --line: hsl(325 0% 16%);
+  --accent: hsl(325 70% 70%);
+  --sans: Archivo, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--sans); }
+.in { max-width: 74rem; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.4rem); }
+.band > * { min-width: 0; }
+.bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .6rem 1rem; padding-top: 1.2rem; padding-bottom: 1.2rem; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.bar nav { display: flex; gap: 1.4rem; }
+.bar a { text-decoration: none; }
+.bar a:hover { color: var(--accent); }
+.hero { padding-top: clamp(2rem, 7vw, 5rem); padding-bottom: clamp(2.5rem, 7vw, 5rem); border-bottom: 1px solid var(--line); }
+.hero h1 { margin: 0; font: 900 clamp(2.8rem, 11vw, 8.5rem)/.88 var(--sans); letter-spacing: -.045em; text-transform: uppercase; overflow-wrap: anywhere; }
+.hero h1 span { color: var(--accent); }
+.hero p { margin: 1.6rem 0 0; max-width: 34ch; font-size: clamp(1.1rem, 2.4vw, 1.45rem); color: var(--muted); }
+.band { display: grid; gap: 1.4rem; padding-top: clamp(2rem, 5vw, 3.4rem); padding-bottom: clamp(2rem, 5vw, 3.4rem); border-bottom: 1px solid var(--line); }
+.num { font: 900 clamp(3.2rem, 9vw, 6rem)/.8 var(--sans); color: transparent; -webkit-text-stroke: 1.5px var(--accent); letter-spacing: -.04em; }
+.who { display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: center; }
+.who .icon { width: 72px; height: 72px; border-radius: 16px; background: var(--card); }
+.who h2 { margin: 0; font: 800 clamp(1.5rem, 3.6vw, 2.2rem)/1.05 var(--sans); letter-spacing: -.03em; text-transform: uppercase; }
+.band .short { margin: 0; color: var(--muted); max-width: 46ch; }
+.trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+.trio img { border-radius: 10px; background: var(--card); border: 1px solid var(--line); }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: .45rem; padding: .7rem 1.1rem; border-radius: 4px; font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1; text-decoration: none; border: 1px solid transparent; transition: background-color .12s, border-color .12s, color .12s; }
+.btn svg { width: 14px; height: 14px; }
+.btn-play { background: var(--accent); color: var(--bg); }
+.btn-play:hover { filter: brightness(1.1); }
+.btn-ghost { border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.block { margin: clamp(2.5rem, 6vw, 4rem) 0; background: var(--accent); color: var(--bg); border-radius: 6px; padding: clamp(1.5rem, 5vw, 3rem); display: grid; gap: 2rem; }
+.block h2 { margin: 0 0 .6rem; font: 900 1.6rem/1 var(--sans); text-transform: uppercase; letter-spacing: -.02em; }
+.block p { margin: 0 0 .7rem; max-width: 52ch; }
+.block .reach { display: flex; flex-direction: column; gap: .6rem; }
+.block .reach a { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; font-weight: 700; word-break: break-all; }
+.block .reach a:hover span { text-decoration: underline; }
+.block .reach svg { width: 17px; height: 17px; flex: 0 0 17px; }
+footer { padding-bottom: 2.4rem; color: var(--muted); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
+.none { color: var(--muted); padding: 2rem 0; }
+@media (min-width: 880px) {
+  .band { grid-template-columns: 9rem 1fr 1.1fr; align-items: start; column-gap: 2.2rem; }
+  .band .txt { display: grid; gap: 1rem; }
+  .block { grid-template-columns: 1.4fr 1fr; }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="bar in"><span>eastfieldlimited.cfd</span>
+    <nav><a href="#games">Games</a><a href="#about">About</a><a href="#about">Contact</a></nav></div>
+  <div class="hero in">
+    <h1>EASTFIELD <span>LIMITED</span></h1>
+    <p>CopperNimbus Games</p>
+  </div>
+</header>
+<main id="games">
+  <article class="band in">
+    <div class="num" aria-hidden="true">01</div>
+    <div class="txt">
+      <div class="who"><img class="icon" src="/icons/flex-session.png" alt="" width="72" height="72" loading="lazy"><h2>Flex Session</h2></div>
+      <p class="short">A stretch routine where every move has its own countdown timer.</p>
+      <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=app.flexsession.calendar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/flex-session/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+    </div>
+    <div class="trio"><img src="/shots/flex-session_1.png" alt="Flex Session screenshot 1" loading="lazy" decoding="async"><img src="/shots/flex-session_2.png" alt="Flex Session screenshot 2" loading="lazy" decoding="async"><img src="/shots/flex-session_3.png" alt="Flex Session screenshot 3" loading="lazy" decoding="async"></div>
+  </article>
+  <article class="band in">
+    <div class="num" aria-hidden="true">02</div>
+    <div class="txt">
+      <div class="who"><img class="icon" src="/icons/walk-more-challenge.png" alt="" width="72" height="72" loading="lazy"><h2>Walk More Challenge</h2></div>
+      <p class="short">Type in the minutes after each walk and watch your days add up, one by one.</p>
+      <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=me.walkmore.calendar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/walk-more-challenge/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+    </div>
+    <div class="trio"><img src="/shots/walk-more-challenge_1.png" alt="Walk More Challenge screenshot 1" loading="lazy" decoding="async"><img src="/shots/walk-more-challenge_2.png" alt="Walk More Challenge screenshot 2" loading="lazy" decoding="async"><img src="/shots/walk-more-challenge_3.png" alt="Walk More Challenge screenshot 3" loading="lazy" decoding="async"></div>
+  </article>
+  <section id="about" class="in"><div class="block">
+    <div><h2>About</h2><p>We develop lighthearted flying games with easy controls and varied courses. Players practice steering, avoid obstacles, and unlock new challenges.</p><p>We care about readable layouts, smooth controls and games that behave the same on a small phone and a large tablet.</p></div>
+    <div><h2>Contact</h2><div class="reach">
+        <a href="mailto:eastfieldlimited.v@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 8.2 5.6a1.4 1.4 0 0 0 1.6 0L21 7"/></svg><span>eastfieldlimited.v@gmail.com</span></a>
+      </div></div>
+  </div></section>
+</main>
+<footer class="in">&copy; 2026 EASTFIELD LIMITED</footer>
+</body>
+</html>
